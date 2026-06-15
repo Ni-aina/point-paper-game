@@ -27,19 +27,19 @@ const Play = () => {
                         />
                     </div>
                 </div>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+                <div className="flex flex-row items-center justify-center gap-2">
                     <div
                         className={`flex items-center gap-3 bg-[#1E293B] border rounded-xl px-4 py-2 transition-all duration-300 ${currentPlayer === 1 ? "border-red-500/40 shadow-[0_0_16px_rgba(239,68,68,0.15)]" : "border-[#334155]"}`}
                     >
                         <span className="w-3 h-3 rounded-full bg-red-500 shadow-[0_0_6px_#EF4444]" />
-                        <span className="text-sm font-semibold text-[#94A3B8]">P1's Score</span>
+                        <span className="hidden sm:block text-sm font-semibold text-[#94A3B8]">P1's Score</span>
                         <span className="text-2xl font-extrabold text-red-400 font-mono">{score1}</span>
                     </div>
                     <div
                         className={`flex items-center gap-3 bg-[#1E293B] border rounded-xl px-4 py-2 transition-all duration-300 ${currentPlayer === 2 ? "border-blue-500/40 shadow-[0_0_16px_rgba(59,130,246,0.15)]" : "border-[#334155]"}`}
                     >
                         <span className="w-3 h-3 rounded-full bg-blue-500 shadow-[0_0_6px_#3B82F6]" />
-                        <span className="text-sm font-semibold text-[#94A3B8]">P2's Score</span>
+                        <span className="hidden sm:block text-sm font-semibold text-[#94A3B8]">P2's Score</span>
                         <span className="text-2xl font-extrabold text-blue-400 font-mono">{score2}</span>
                     </div>
                 </div>
